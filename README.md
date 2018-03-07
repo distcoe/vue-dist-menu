@@ -1,4 +1,4 @@
-# vue-distMenu
+# vue-dist-menu
 
 Feature & characteristcs
 
@@ -6,7 +6,11 @@ Feature & characteristcs
 
 ## Install & Basic Usage
 
+npm install vue-dist-menu
+
 ## JSFiddle
+
+
 
 ## Examples
 
