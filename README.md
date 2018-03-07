@@ -1,4 +1,4 @@
-# vue-compactable
+# vue-distMenu
 
 Feature & characteristcs
 

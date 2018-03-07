@@ -28,7 +28,7 @@ npm manifest:
       "test": "jest"
     },
     "keywords": [],
-    "author": "kivixiao",
+    "author": "maolf",
     "license": "ISC",
     "devDependencies": {
       "@vue/test-utils": "^1.0.0-beta.10",

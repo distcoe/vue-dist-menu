@@ -3,11 +3,11 @@ const webpack = require("webpack");
 const merge = require("webpack-merge");
 
 module.exports = merge(require("./webpack.base"), {
-  entry: "./src/compactable.vue",
+  entry: "./src/distMenu.vue",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "vue-compactable.min.js",
-    library: "vue-compactable",
+    filename: "vue-distmenu.min.js",
+    library: "vue-distmenu",
     libraryTarget: "umd",
     umdNamedDefine: true
   },

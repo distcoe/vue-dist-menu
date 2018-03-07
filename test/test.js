@@ -1,46 +1,22 @@
 import { mount } from "@vue/test-utils";
-import compactable from "../src/compactable.vue";
+import distMenu from "../src/distMenu.vue";
 
-describe("compatable.vue", () => {
-  const wrapper = mount(compactable, {
+describe("distMenu.vue", () => {
+  const wrapper = mount(distMenu, {
     propsData: {
-      column: [],
-      data: []
+      firstDeckMenu: [],
+      secondDeckMenu: [],
+      EventBus: {},
     }
   });
   it("no data to show", () => {
     expect(wrapper.html()).toContain("没有数据");
   });
-  it("show table with required props", () => {
-    const column = [
-      [
-        {
-          title: "titleA",
-          key: "name",
-          align: "center"
-        },
-        {
-          title: "titleB",
-          key: "value",
-          align: "center"
-        }
-      ]
-    ];
-    const data = [
-      {
-        name: "a",
-        value: "b"
-      },
-      {
-        name: "a",
-        value: "b"
-      },
-      {
-        name: "a",
-        value: "b"
-      }
-    ];
-    wrapper.setProps({ column, data });
-    expect(wrapper.findAll(".dataRow")).toHaveLength(3);
+  it("show distMenu with required props", () => {
+    const firstDeckMenu = 2015
+    const secondDeckMenu = [2013, 2014];
+    const EventBus = {};
+    wrapper.setProps({ currentTime, data });
+    expect()
   });
 });

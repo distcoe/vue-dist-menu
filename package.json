@@ -1,19 +1,13 @@
 {
-  "name": "vue-compactable",
-  "version": "0.0.12",
-  "description": "A easy to use table components",
-  "main": "dist/vue-compactable.min.js",
+  "name": "vue-dist-menu",
+  "version": "1.0.28",
+  "description": "Feature & characteristcs",
+  "main": "dist/vue-distmenu.min.js",
   "directories": {
     "doc": "docs",
     "test": "test"
   },
-  "scripts": {
-    "build": "rm -rf dist && NODE_ENV=production webpack",
-    "test": "jest"
-  },
-  "keywords": [],
-  "author": "kivixiao",
-  "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^6.26.0",
@@ -42,11 +36,26 @@
     "webpack-merge": "^4.1.1"
   },
   "jest": {
-    "moduleFileExtensions": ["js", "json", "vue"],
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "vue"
+    ],
     "transform": {
       ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest",
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
     },
     "mapCoverage": true
-  }
+  },
+  "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production webpack",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maolf/vue-dist-menu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": ""
 }

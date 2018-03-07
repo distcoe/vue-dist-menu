@@ -1,7 +1,7 @@
-import compactable from "./compactable.vue";
+import distMenu from "./distMenu.vue";
 
 export default {
   install(Vue) {
-    Vue.component("compactable", compactable);
+    Vue.component("distMenu", distMenu);
   }
 };
