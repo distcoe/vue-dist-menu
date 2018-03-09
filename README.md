@@ -109,10 +109,22 @@ Feature & characteristcs
       }
     ]
   },
+  {
+    "type": "oneDeckRouteMenu",
+    "items": [
+      {
+        "path": "/XXXX",
+        "name": "二级菜单3"
+      },
+      {
+        "path": "/XXXX",
+        "name": "二级菜单4"
+      }
+    ]
+  }
 ]
 ```
-  
-  
+其中type为菜单类型，主要分为单层级菜单(`oneDeckRouteMenu`)和两层级菜单(`twoDeckRouteMenu`)。单层级菜单没有二级子菜单，多层级菜单有二级子菜单，icon为菜单对应图标，path为菜单跳转的路由，templateName为两层级导航的菜单名
 
 
 ## JSFiddle
