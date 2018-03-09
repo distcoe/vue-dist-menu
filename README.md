@@ -54,6 +54,66 @@ Feature & characteristcs
       }
     }
 ```
+5.菜单栏数据分为两类数据，分别为一级菜单栏数据、二级菜单栏数据,其数据结构分别如下：
+  ### 一级菜单栏数据结构（如上firstDeckMenu):
+  ```javascript
+    [
+        {
+            "name": "一级菜单1",
+            "icon": "XXXX1",
+            "path": "/XXXXXX1"
+        },
+        {
+            "name": "一级菜单2",
+            "icon": "XXXX2",
+            "path": "/XXXX2"
+        },
+        ........
+    ]
+  ```
+  其中name为菜单栏名，icon为菜单对应图标，path为菜单跳转的路由
+  
+ ### 二级菜单栏数据结构（如上secondDeckMenu):
+```javascript
+[
+    {
+    "type": "twoDeckRouteMenu", 
+    "items": [
+      {
+        "path": "/XXXX1",
+        "templateName": "二级菜单1",
+        "children": [
+          {
+            "path": "/xxxx/1",
+            "name": "二级子菜单1"
+          },
+          {
+            "path": "/xxxx/2",
+            "name": "二级子菜单2"
+          }
+        ]
+      },
+      {
+        "path": "/XXXX2",
+        "templateName": "二级菜单2",
+        "children": [
+          {
+            "path": "/xxxx/3",
+            "name": "二级子菜单3"
+          },
+          {
+            "path": "/xxxx/4",
+            "name": "二级子菜单4"
+          }
+        ]
+      }
+    ]
+  },
+]
+```
+  
+  
+
 
 ## JSFiddle
 
